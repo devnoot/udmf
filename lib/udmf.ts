@@ -1,10 +1,4 @@
-export class Vertex implements Vertex {
-
-  x: number
-  y: number
-
-  constructor(x: number, y: number) {
-    this.x = x
-    this.y = y
-  }
-}
+export { type LinedefOpts, Linedef } from './linedef.ts'
+export { type SectorOpts, Sector } from './sector.ts'
+export { type ThingOpts, Thing } from './thing.ts'
+export { type VertexOpts, Vertex } from './vertex.ts'
