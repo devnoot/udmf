@@ -1,3 +1,3 @@
 # UDMF
 
-TypeScript library for UDMF formatted Doom maps
+TypeScript library for the UDMF Doom/ZDoom map spec.
