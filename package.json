@@ -1,7 +1,7 @@
 {
   "name": "udmf",
   "version": "1.0.0",
-  "description": "",
+  "description": "TypeScript library for the Universal Doom Map Format (UDMF) specification with ZDoom extensions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/devnoot/udmf.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["udmf", "doom", "zdoom", "gzdoom", "map", "level-editor", "typescript"],
+  "author": "Anthony W. Weed <anthony.w.weed@gmail.com>",
   "license": "GPL-3.0-only",
   "bugs": {
     "url": "https://github.com/devnoot/udmf/issues"
