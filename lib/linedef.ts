@@ -1,104 +1,73 @@
 export interface LinedefOpts {
   /* Line id / tag */
   id: number;
-
   /* Index of first vertex */
   v1: number;
-
   /* Index of last vertex */
   v2: number;
-
   /* Line blocks things */
   blocking?: boolean;
-
   /* Line blocks monsters */
   blockmonsters?: boolean;
-
   /* Lins is two-sided */
   twosided?: boolean;
-
   /* Upper texture is unpegged */
   dontpegtop?: boolean;
-
   /* Lower texture is unpegged */
   dontpegbottom?: boolean;
-
   /* Drawn as a secret on map */
   secret?: boolean;
-
   /* Blocks sound */
   blocksound?: boolean;
-
   /* Line is never drawn on map */
   dontdraw?: boolean;
-
   /* Line always appears on map */
   mapped?: boolean;
-
   /* Passes use action */
   passuse?: boolean;
-
   // Strife specific flags. Support for other games is not defined by
   // default and these flags should be ignored when reading maps not for
   // the Strife namespace or maps for a port which supports these flags.
-
   /* Line is a Strife translucent line */
   translucent?: boolean;
-
   /* Line is a Strife railing */
   jumpover?: boolean;
-
   /* Line is a Strife float-blocker */
   blockfloaters?: boolean;
-
   // Note: SPAC flags should be set false in Doom/Heretic/Strife
   // namespace maps. Specials in those games do not support this
   // mechanism and instead imply activation parameters through the
   // special number. All flags default to false.
-
   /* Player can use */
   playeruse?: boolean;
-
   /* Player can cross */
   playercross?: boolean;
-
   /* Monster can cross */
   monstercross?: boolean;
-
   /* Monster can use */
   monsteruse?: boolean;
-
   /* Projective can activate */
   impact?: boolean;
-
   /* Player can push */
   playerpush?: boolean;
-
   /* Monster can push */
   monsterpush?: boolean;
-
   /* Projectile can cross */
   misslecross?: boolean;
-
   /* Special is repeatable */
   repeatspecial?: boolean;
-
   /* Line special */
   special?: number;
-
   /* Special args */
   arg0?: number;
   arg1?: number;
   arg2?: number;
   arg3?: number;
   arg4?: number;
-
   /* Sidedef 1 (front) index */
   sidefront: number;
-
   /* Sidedef 2 (back) index */
   sideback?: number;
-
   /* A comment */
   comment?: string;
 }

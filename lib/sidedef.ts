@@ -1,22 +1,16 @@
 export interface SidedefOpts {
   /* X Offset */
   offsetx?: number;
-
   /* Y Offset */
   offsety?: number;
-
   /* Upper texture */
   texturetop?: string;
-
   /* Lower texture */
   texturebottom?: string;
-
   /* Middle texture */
   texturemiddle?: string;
-
   /* Sector index */
   sector: number;
-
   /* A comment */
   comment?: string;
 }

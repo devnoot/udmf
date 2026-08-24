@@ -1,102 +1,70 @@
 export interface ThingOpts {
   /* Thing id */
   id?: number; // Thing ID. Default = 0.
-
   /* X coordinate */
   x: number; // X coordinate. No valid default.
-
   /* Y coordinate */
   y: number; // Y coordinate. No valid default.
-
   /* Z height relative to floor */
   height?: number; // Z height relative to floor. Default = 0 (Relative to ceiling for SPAWNCEILING items)
-
   /* Map angle of thing in degrees */
   angle?: number; // Map angle of thing in degrees. Default = 0 (East).
-
   /* Doomed Number */
   type: number; // DoomedNum. No valid default.
-
   // All flags default to false.
-
   /* Spawn in skill 1 */
   skill1?: boolean;
-
   /* Spawn in skill 2 */
   skill2?: boolean;
-
   /* Spawn in skill 3 */
   skill3?: boolean;
-
   /* Spawn in skill 4 */
   skill4?: boolean;
-
   /* Spawn in skill 5 */
   skill5?: boolean;
-
   /* Thing is deaf */
   ambush?: boolean;
-
   /* Spawn in single player mode */
   single?: boolean;
-
   /* Spawn in deathmatch mode */
   dm?: boolean;
-
   /* Spawn in coop mode */
   coop?: boolean;
-
   // MBF friend flag not supported in Strife/Heretic/Hexen namespaces.
-
   /* MBF friend */
   friend?: boolean;
-
   // Hexen flags; not supported in Doom/Strife/Heretic namespaces.
-
   /* Thing is dormant */
   dormant?: boolean;
-
   /* Thing is present for pclass 1 */
   class1?: boolean;
-
   /* Thing is present for pclass 2 */
   class2?: boolean;
-
   /* Thing is present for pclass 3 */
   class3?: boolean;
-
   // Strife specific flags. Support for other games is not defined by
   // default and these flags should be ignored when reading maps not for
   // the Strife namespace or maps for a port which supports these flags.
-
   /* Strife NPC flag */
   standing?: boolean;
-
   /* Strife ally flag */
   strifeally?: boolean;
-
   /* Strife translucency flag */
   translucent?: boolean;
-
   /* Strife invisibility flag */
   invisible?: boolean;
-
   // Note: suggested editor defaults for all skill, gamemode, and player
   // class flags is true rather than the UDMF default of false.
-
   // Thing special semantics are only defined for the Hexen namespace or
   // ports which implement this feature in their own namespace.
-
   /* Scripting special */
   special?: number; // Scripting special. Default = 0;
-
   /* Special args */
   arg0?: number;
   arg1?: number;
   arg2?: number;
   arg3?: number;
   arg4?: number;
-
   /* A comment */
   comment?: string;
 }

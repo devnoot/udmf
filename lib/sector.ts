@@ -1,25 +1,18 @@
 export interface SectorOpts {
   /* Sector tag / id */
   id?: number;
-
   /* Floor height */
   heightfloor?: number;
-
   /* Ceiling height */
   heightceiling?: number;
-
   /* Floor flat */
   texturefloor: string;
-
   /* Ceiling flat */
   textureceiling: string;
-
   /* Light level */
   lightlevel?: number;
-
   /* Sector sepcial */
   special?: number;
-
   /* A comment */
   comment?: string;
 }
