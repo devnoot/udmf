@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/devnoot/udmf#readme",
   "devDependencies": {
+    "@types/node": "^26.2.0",
     "typescript": "^5.9.3"
   }
 }
