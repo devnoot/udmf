@@ -1,41 +1,38 @@
 export interface SectorOpts {
-
   /* Sector tag / id */
-  id?: number
+  id?: number;
 
   /* Floor height */
-  heightfloor?: number
+  heightfloor?: number;
 
   /* Ceiling height */
-  heightceiling?: number
+  heightceiling?: number;
 
   /* Floor flat */
-  texturefloor: string
+  texturefloor: string;
 
   /* Ceiling flat */
-  textureceiling: string
+  textureceiling: string;
 
   /* Light level */
-  lightlevel?: number
+  lightlevel?: number;
 
   /* Sector sepcial */
-  special?: number
+  special?: number;
 
   /* A comment */
-  comment?: string
-
+  comment?: string;
 }
 
 export class Sector {
-
-  readonly id?: number
-  readonly heightfloor?: number
-  readonly heightceiling?: number
-  readonly texturefloor?: string
-  readonly textureceiling?: string
-  readonly lightlevel?: number
-  readonly special?: number
-  readonly comment?: string
+  readonly id?: number;
+  readonly heightfloor?: number;
+  readonly heightceiling?: number;
+  readonly texturefloor?: string;
+  readonly textureceiling?: string;
+  readonly lightlevel?: number;
+  readonly special?: number;
+  readonly comment?: string;
 
   constructor({
     id = 0,
@@ -45,15 +42,15 @@ export class Sector {
     textureceiling,
     lightlevel = 160,
     special = 0,
-    comment = ''
+    comment = '',
   }: SectorOpts) {
-    this.heightfloor = heightfloor
-    this.heightceiling = heightceiling
-    this.texturefloor = texturefloor
-    this.textureceiling = textureceiling
-    this.lightlevel = lightlevel
-    this.special = special
-    this.id = id
-    this.comment = comment
+    this.heightfloor = heightfloor;
+    this.heightceiling = heightceiling;
+    this.texturefloor = texturefloor;
+    this.textureceiling = textureceiling;
+    this.lightlevel = lightlevel;
+    this.special = special;
+    this.id = id;
+    this.comment = comment;
   }
 }
